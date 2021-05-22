@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WATERIFY A DATA STORY</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/media/favicon.svg"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="error">
+</div>
+
+<div id="navbar">
+    <div id="navbar-logo-container">
+        <div class="navbar-logo-text-sx"><a href="index.html">WATERIFY DATA-STORY</a></div>
+        <div id="navbar-logo-img"></div>
+        <div class="navbar-logo-text-dx"><a target="_blank" href="https://fabpapini96.github.io/waterify/index.html">SUPPORT
+            US</a></div>
+    </div>
+</div>
+
+<div id="container-section">
+    <section id="s1" class="section">
+        <span class="section-title">Availability and management of water resources</span>
+        <div class="section-content">
+            <div class="semi-content">
+                <p class="content-p">According to the ONU, by 2050, at least ¼ of the population will be affected by
+                    persistent and recurring water shortages.</p>
+                <p class="content-p">Increased consumption, coupled with an undervaluation of water, inadequate
+                    governance arrangements and weak enforcement, is leading to the depletion of water resources at an
+                    unprecedented rate. Climate change puts another set of pressures on this rapidly changing context:
+                    how efficient is water management? How fair is the water trade?
+                </p>
+                <p class="content-p"><a target="_blank" href="https://sdgs.un.org/goals/goal6">Sustainable Development
+                    Goal 6</a>, among the 17 targets of the Agenda 2030, focuses on
+                    critical issues and future goals regarding global water resources. By analysing the current
+                    scenario, this research aims to map the availability and management of water resources worldwide.
+                </p>
+                <p class="content-p">Data collected by <a href="#s4">various monitoring organisations</a> focus on the
+                    SDG regions most at
+                    risk regarding <a
+                            href="https://www.eea.europa.eu/archived/archived-content-water-topic/wise-help-centre/glossary-definitions/water-stress"
+                            target="_blank">water stress</a>.</p>
+            </div>
+            <div class="semi-content">
+            </div>
+
+        </div>
+    </section>
+    <section id="s2" class="section">
+        <span class="section-title">Nine years until the end of the Agenda 2030, which geographical areas are currently experiencing the most critical situation?</span>
+        <p class="content-p" style="margin-top: 70px"><strong>Water Stress (Source: World Resource Institute, global water stress dataset retrieved in 2019, water stress by sectors dataset retrieved in 2015)</strong></p>
+        <div class="section-content" style="padding-top: 0">
+            <div id="map-water-stress-container">
+                <div id="map-water-stress-button-container">
+                    <span class="map-button map-button-active" onclick="showMap('water-stress-svg', this)">Global Water Stress</span>
+                    <span class="map-button"
+                          onclick="showMap('water-stress-domestic-svg', this)">Domestic Water Stress</span>
+                    <span class="map-button" onclick="showMap('water-stress-irrigation-svg', this)">Irrigation Water Stress</span>
+                    <span class="map-button" onclick="showMap('water-stress-livestock-svg', this)">Livestock Water Stress</span>
+                    <span class="map-button" onclick="showMap('water-stress-industrial-svg', this)">Industrial Water Stress</span>
+                </div>
+                <div id="map-water-stress">
+                    <object id="water-stress-svg" class="map-svg" type="image/svg+xml"
+                            data="assets/media/water-stress-global.svg"></object>
+                    <object style="display: none" id="water-stress-domestic-svg" class="map-svg" type="image/svg+xml"
+                            data="assets/media/map-home-2.svg"></object>
+                    <object style="display: none" id="water-stress-irrigation-svg" class="map-svg" type="image/svg+xml"
+                            data="assets/media/waterstress-irrigation.svg"></object>
+                    <object style="display: none" id="water-stress-livestock-svg" class="map-svg" type="image/svg+xml"
+                            data="assets/media/waterstress-livestock.svg"></object>
+                    <object style="display: none" id="water-stress-industrial-svg" class="map-svg" type="image/svg+xml"
+                            data="assets/media/waterstress-industrial.svg"></object>
+
+                </div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="semi-content">
+            </div>
+            <div class="semi-content">
+                <p class="sub-title">FINDINGS</p>
+                <p class="content-p">The global scenario shows that a risky situation is evident in the Middle East
+                    and North Africa region.</p>
+                <p class="content-p">According to <a style="font-style: italic"
+                                                     href="https://openknowledge.worldbank.org/handle/10986/27659"
+                                                     target="_blank">Wordbank's Beyond Scarcity: Water Security in the Middle East and
+                    North Africa report (2018)</a>, the region includes 17 countries below the ONU-defined water
+                    scarcity threshold.</p>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="semi-content">
+                <img style="border: 1px solid #0094FF" src="assets/media/mena-map.svg">
+            </div>
+
+            <div class="semi-content">
+                <span class="section-title">What affects this index so negatively? And why in these regions?</span>
+                <p class="content-p">Internal reasons, such as climatic conditions or restricted resources, and external
+                    causes, such as continuous population growth, influence water scarcity.</p>
+                <p class="content-p">An increase in demand due to the constantly growing population index and
+                    morphological reasons influenced by geographical location and climate leads to the depletion of
+                    water resources - especially groundwater - at an unprecedented rate. </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="s3" class="section">
+        <div class="section-content">
+            <div class="semi-content">
+                <span class="section-chapter-title">CHAPTER 01</span>
+                <span class="section-chapter-link"><a href="pages/local-water-resources.html">-> MENA local water resources management</a></span>
+                <span class="section-chapter-title">CHAPTER 02</span>
+                <span class="section-chapter-link"><a href="pages/mena-water-trade.html">-> MENA water trade</a></span>
+            </div>
+            <div class="semi-content">
+                <img src="assets/media/homepage-animation-02.svg">
+            </div>
+        </div>
+    </section>
+    <section id="s4" class="section">
+        <span class="section-title">References</span>
+        <div class="section-content">
+            <div id="bibliography">
+                <span>BIBLIOGRAPHY</span>
+                <p>-> Hofste, K., S. Kuzma, S. Walker, E. Sutanudjaja, M. Bierkens, M. Kuijper, M. Faneca Sanchez, et
+                    al. “Aqueduct 3.0: Updated Decision-Relevant Global Water Risk Indicators”. WRI Publications,
+                    2019</p>
+                <p>-> Intelligent Energy, “Guidelines for the regulation of desalination” </p>
+                <p>-> ITOPF, “Oil Tanker Spill Statistic 2018”, 2019 </p>
+                <p>-> Joseph Cresko. “Bandwidth Study on Energy Use and Potential Energy Savings Opportunities in U.S.
+                    Seawater Desalination Systems” </p>
+                <p>-> Natis Beyond Banking, “Desalination: balancing the Socioeconomic Benefits and Environmental
+                    Costs” </p>
+                <p>-> Rao, Prakash, Arian Aghajanzadeh, Paul Sheaffer, William R. Morrow, Sabine Brueske, Caroline
+                    Dollinger, Kevin Price, Prateeti Sarker, Nicholas Ward, e Joe Cresko. “Survey of Available
+                    Information in Support of the Energy-Water Bandwidth Study of Desalination Systems”, 2016</p>
+                <p>-> Reig, P., T. Luo, E. Christensen, e J. Sinistore. “Guidance for Calculating Water Use Embedded in
+                    Purchased Electricity”, 2020 </p>
+                <p>-> World Bank. “Beyond Scarcity: Water Security in the Middle East and North Africa”. The Role of
+                    Desalination in an Increasingly Water-Scarce World. World Bank, 2019 </p>
+                <p>-> World Bank Group “The role of desalination in an increasingly Water-Scarce World”, 2019 </p>
+                <p>-> SABMiller, WWF, “Water Footprinting: identifying & addressing water risks in the value chain”</p>
+            </div>
+            <div id="sitography">
+                <span>SITOGRAPHY</span>
+                <ul id="sitography-links">
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div id="footer">
+        <div class="footer-logo"><img src="assets/media/logo-polimi.png"></div>
+        <div class="footer-logo"><img src="assets/media/logo-tongji.png"></div>
+        <div class="footer-text">
+            <span class="bold">A project by</span>
+            <span class="italic">Chiara Giacomuzzo, Giorgia Licari, Papini Fabiola</span>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/map-controller.js"></script>
+<script src="assets/data/data.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

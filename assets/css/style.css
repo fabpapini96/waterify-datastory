@@ -1,0 +1,421 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+!important background-color: white;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+  }
+
+@media only screen and (max-width: 1200px) {
+      #error{
+        display: block !important;
+        background-position: center !important;
+      }
+      #navbar{
+        display: none !important;
+      }
+      #navbar-logo-container{
+        display: none !important;
+      }
+      #container-section{
+        display:none;
+      }
+}
+
+#error {
+  background-image: url('../media/error.png');
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  display: none;
+}
+
+a {
+    color: #0094FF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#navbar a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+navbar a:hover {
+    text-decoration: none;
+}
+
+
+#navbar {
+    height: 70px;
+    background-color: #37474F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px 0 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#navbar-logo-container {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo-text-dx {
+    font-weight: bold;
+    margin-left: 1em;
+    width: 200px;
+    text-align: right;
+}
+
+.navbar-logo-text-sx {
+    font-weight: bold;
+    margin-left: 1em;
+    width: 200px;
+
+}
+
+#navbar-logo-img {
+    background-image: url("../media/icon-navbar.png");
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 70px 70px 70px;
+}
+
+.section-title {
+    width: 70%;
+    font-size: 4em;
+    color: #0094FF;
+    font-weight: 800;
+}
+
+.section-chapter-title {
+    width: 70%;
+    font-size: 1.5em;
+    color: #0094FF;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+.section-chapter-link {
+    width: 100%;
+    font-size: 3em;
+    color: #0094FF;
+    font-weight: 800;
+    margin-bottom: 2em;
+}
+
+.section-chapter-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0 90px 0;
+}
+
+.section-content-chart {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.semi-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.section-content p {
+    font-size: 1.3em;
+    margin: 1em 0 0 0;
+}
+
+
+.left {
+    width: 50%;
+}
+
+#s1 {
+    padding-right: 0 !important;
+    background-image: url("../media/homepage-animation-01.svg");
+    background-position: right;
+    background-size: 700px;
+    background-repeat: no-repeat;
+}
+
+#s2 {
+    background-color: #F8F8F8;
+}
+
+#s2 .semi-content {
+    padding: 1em;
+}
+
+#s2 span.section-title {
+    font-size: 2.5em;
+    width: 90%;
+    font-weight: 500;
+    color: black;
+}
+
+.question-title {
+    font-size: 2.5em;
+    width: 90%;
+    font-weight: 500;
+    margin-top: 70px;
+    color: black;
+}
+
+#map-water-stress-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#map-water-stress-button-container {
+    display: flex;
+    justify-items: left;
+    height: 70px;
+
+}
+
+.map-svg{
+    width:100%;
+}
+
+.map-button-active {
+    background-color: #0094FF !important;
+}
+
+.map-button:hover {
+    background-color: #0094FF;
+}
+
+.map-button {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    background-color: #97D3FF;
+    color: white;
+    width: 300px;
+    margin-right: 2px;
+    cursor: pointer;
+
+}
+
+#map-water-stress {
+    width: 100%;
+    border: 1px solid #0094FF;
+    /*background-color: rgba(0, 0, 0, 0.16);*/
+}
+
+.sub-title {
+    color: #0094FF;
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+#s4 {
+    background-color: #0094FF;
+    color: white;
+    display: flex;
+}
+
+#s4 span.section-title {
+    color: white;
+}
+
+#s4 .section-content {
+    justify-content: left;
+}
+
+#bibliography {
+    margin-right: 4em;
+    width: 25%;
+}
+
+#sitography {
+    margin-right: 2em;
+}
+
+#bibliography > span, #sitography > span {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#bibliography > p, #sitography > p {
+    font-size: .7em;
+    font-weight: 300;
+}
+
+#sitography-links {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 0;
+    column-count: 3;
+    column-gap: 20px;
+    padding: 0;
+}
+
+#sitography-links li {
+    margin-bottom: .5em;
+}
+
+#sitography-links a {
+    text-decoration: none;
+    color: white;
+}
+
+#sitography-links a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    color: white;
+    display: flex;
+    background-color: #37474F;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 50px 70px 50px 70px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-text span {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+.chart {
+    padding: 70px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+#s7, #s8 {
+    background-color: #F8F8F8;
+}
+
+#s10 {
+    background-color: #0094FF;
+    display: flex;
+    align-items: center
+}
+
+#s10 a {
+    color: white;
+
+}
+
+#s10 span {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 2em;
+}
+
+#s10 p {
+    width: 70%;
+    color: white;
+    line-height: 2;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.ord-list{
+    color: #0094FF;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 1em 0 0 0;
+}
+
+#treemap-1-tech-mena, #treemap-2-tech-mena{
+    padding: 70px 0 0 0; !important
+}
+
+.legend{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.card{
+    width: 350px;
+    height: 350px;
+    padding: 2em;
+    border: 2px solid #0094FF;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title{
+    width: 100%;
+    color: #0094FF;
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content span{
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
